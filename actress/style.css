@@ -1,0 +1,101 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient( 180.4deg,  rgba(9,30,61,1) 45.3%, rgba(95,123,190,1) 279% );
+
+        }
+
+        
+        .navbar {
+            
+            /* background-image: linear-gradient( 109.6deg,  rgba(0,37,84,1) 11.2%, rgba(0,37,84,0.32) 100.2% ); */
+            background-image: linear-gradient( 171.8deg,  rgba(255,159,0,1) -6.3%, rgba(208,23,23,1) 86.7% );
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-input {
+            padding: 10px 40px 10px 15px;
+            border: 1px solid #10ed47;
+            border-radius: 35px;
+            width: 300px;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            color: #888;
+        }
+
+      
+        .actresses-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px 50px;
+        }
+
+        .actress-card {
+            /* background-color: rgb(255, 255, 255); */
+            background: linear-gradient(to right, #ffe259, #ffa751);
+
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .actress-card:hover {
+            transform: scale(1.05);
+            transition-delay: 2ms;
+            transition-duration: 0.5s;
+
+         }
+
+          .btn-grad:hover {
+            background-position: right center; 
+            color: orange;
+            text-decoration: none;
+          }
+          
+        .actress-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .actress-name {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Loading and Error States */
+        .loading, .error {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+            color: #666;
+        }
+     
